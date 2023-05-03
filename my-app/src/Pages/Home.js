@@ -1,50 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import HCss from "../Styles/home.module.css";
 import CaptionCarousel from "../Components/crousels";
 import CardofPhotos1 from "../Components/Card";
 import { dataofPotoes } from "../db";
 import { Image } from "@chakra-ui/react";
-const Home = () => {
-  return (
-    <div>
-      <div className={HCss.Container}>
-        <div className={HCss.Container}>
-          <div>
-            <img
-              src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png"
-              alt="logo"
-            />
-          </div>
-          <div>
-            <input placeholder="Search for a Category,brand or products" />
-          </div>
-        </div>
 
-        <div className={HCss.Container}>
-          <div>Select location</div> |<div>Stores & Preschools</div> |
-          <div>Support</div> |<div>Track Order</div> |<div>FirstCry</div> |
-          <div> ParentingMy</div> |<div>Account</div>|<div>Shortlis</div> |
-          <div> Cart</div>
-        </div>
+import { Link, useNavigate } from "react-router-dom";
+const Home = () => {
+  const[loged,setloged]=useState(false)
+  const [user,setuser]=useState('')
+  
+const navigate=useNavigate()
+  const handlenav=()=>{
+    
+navigate("/register")
+  }
+const seewhathappen=(e)=>{
+  e.preventDefault()
+  navigate("/register")
+}
+
+
+
+  return (
+    <div >
+      <div className={HCss.MContainer}>
+ 
+
+     
       </div>
-      <div className={HCss.LowNavbar}>
-        <a href="/products">
-            BOY FASHION
-        </a>
-      
-        <a href="/products">GIRL FASHION</a>
-        <a href="/products">FOOTWEAR</a>
-        <a href="/products">TOYS</a>
-        <a href="/products">DIAPERING</a>
-        <a href="/products">GEAR</a>
-        <a href="/products">FEEDING</a>
-        <a href="/products"> BATH</a>
-        <a href="/products">NURSERY</a>
-        <a href="/products">MOMS</a>
-        <a href="/products">HEALTH</a>
-        <a href="/products">BOUTIQUES</a>
-      </div>
-      <div>
+    
+      <div >
         <CaptionCarousel />
       </div>
       <div className={HCss.mainBody}>
@@ -118,7 +104,7 @@ const Home = () => {
             
           </div>
           <div>
-            <img src="/img1.png" alt="screeshot1"/>
+            <img src="/img1.png" alt="screeshot2"/>
           </div>
           <div>
             <img src="/img.png" alt="screeshot1"/>

@@ -23,10 +23,9 @@ import {
 } from "@chakra-ui/react";
 
 export default function ProductCard(items) {
-  const { imageOfCards, ptitle, ptitle2 } = items;
-  const handleClick=()=>{
-    alert("item added to cart")
-  }
+  // console.log(items,"this is the item i am getting")
+  const { imageOfCards, ptitle, ptitle2,onClick } = items;
+  
   const handleClick1=()=>{
     alert("item added to ShortList")
   }
@@ -106,7 +105,7 @@ export default function ProductCard(items) {
           </Button>
         </HStack>
         <HStack justifyContent={"space-evenly"} mt={"5px"}>
-          <Button onClick={handleClick}>Add To Cart</Button>
+          <Button onClick={()=>onClick(items)}>Add To Cart</Button>
           <Button onClick={handleClick1}>ShortList</Button>
         </HStack>
       </Box>

@@ -12,6 +12,8 @@ const Register = () => {
     email: "",
     password: "",
     phone: "",
+    cart:[],
+
   });
 
   const getTheDatabase = async () => {
@@ -69,28 +71,36 @@ const Register = () => {
           maxLength="30"
           autoComplete="off"
           placeholder="Enter your Full Name"
+        
+          required
         />
         <label>Mobile Number</label>
         <input
           className={RCss.inputofRegister}
           onChange={handleChange}
-          placeholder="Enter your Full Name"
+          placeholder="EnterMobile number"
           name="phone"
+          type="number"
+          required
         />
         <p>OTP will be sent on this Mobile No. for verification.</p>
         <label>Email ID</label>
         <input
           className={RCss.inputofRegister}
           onChange={handleChange}
-          placeholder="Enter your Full Name"
+          placeholder="Enter email"
           name="email"
+          type="email"
+          required
         />
         <label>Password</label>
         <input
           className={RCss.inputofRegister}
           onChange={handleChange}
-          placeholder="Enter your Full Name"
+          placeholder="Enter your password"
           name="password"
+          type="password"
+          required
         />
         <p>
           Password must be at least 8 characters long with 1 Uppercase, 1

@@ -17,10 +17,13 @@ setuserExist(datafromserver.data)
 
 const handleSubmit =(e)=>{
   e.preventDefault()
-  let userexist1 = userexist.some((user) => user.email === email);
+  let userexist1 = userexist.find((user) => user.email == email);
 // console.log(userexist1,"this is to check either the user exists or not")
 
+console.log(userexist1)
 if(userexist1){
+  
+  localStorage.setItem("loggedUser",JSON.stringify(userexist1))
 navigate("/login2")
 }else{
   alert("Please Register first")
