@@ -1,0 +1,72 @@
+.Container {
+  /* border: 2px solid red; */
+  max-width: 350px;
+  height: 600px;
+  padding: 30px;
+  margin: auto;
+  text-align: left;
+}
+
+.Register{
+    font-family: RobotoMB;
+    font-size: 18px !important;
+    color: #424242;
+    line-height: 25px;
+}
+label {
+  display: block;
+  font-family: RobotoMB;
+  font-size: 16px;
+  color: #0b0b0b;
+  line-height: 20px;
+}
+
+p {
+  font-size: 12px;
+  color: #424242;
+  line-height: 17px;
+  margin-top: 10px;
+}
+
+.inputofRegister {
+  border: none;
+  outline: none;
+  font-family: RobotoLR;
+  font-size: 14px !important;
+  width: 100%;
+  background-color: #fff;
+  height: 30px;
+
+  border-bottom: 1px solid #a6a6a6;
+  margin: 5px 0;
+  line-height: 30px;
+  border-radius: 0;
+}
+
+.CButton{
+    background-color: #ff7043;
+    color: #fff;
+    width: 100%;
+    height: fit-content;
+    padding: 0.6rem 0rem;
+    margin-top: 20px;
+margin-bottom: 20px;
+}
+.Google{
+    
+    background-color: rgba(00, 00, 00, 00);
+    width: 100%;
+    border: 1px solid;
+    font-weight: lighter;
+    border-radius: 0%;
+}
+.Google:hover{
+background-color: #fff;
+}
+.loginregister{
+    color: rgb(6, 159, 241);
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+

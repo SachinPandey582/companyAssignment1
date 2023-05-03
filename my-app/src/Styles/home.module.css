@@ -1,0 +1,68 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin-top: 10px;
+    font-size: 14px;
+   word-spacing: 5px;
+}
+.Container>div{
+    margin-right: 2px;
+}
+input{
+    outline: 1px;
+    border: 1px solid;
+    padding: 2px;
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.LowNavbar{
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .mainBody{
+    background-color: rgb(238,238,238);
+    height: 1600px;
+  }
+  .FirstContainer{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+  }
+  h1{
+    margin: auto;
+    font-size: x-large;
+    margin-top:-100px ;
+    margin-bottom: -20px;
+  }
+  .seconContainer{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    align-items: center;
+    width: 94%;
+    padding: 1rem 0rem;
+    margin: auto;
+  }
+  .ThirdContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+  }
+  
+  .ThirdContainer>img{
+width: 300px;
+  }
+  .fourthContainer{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    width: 94%;
+    margin: auto;
+  }
